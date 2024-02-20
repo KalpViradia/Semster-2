@@ -1,0 +1,61 @@
+<html>
+<head>
+    
+</head>
+<style>
+    .background{
+        height: 690px;
+        width: 99.8%;
+        border: 5px solid;
+        animation-name: colorchange;
+        animation-duration: 2s;
+    }
+    .movement{
+        height: 100px;
+        width: 100px;
+        animation-name: move;
+        animation-duration: 2s;
+        background-color: chartreuse;
+        animation-iteration-count: infinite;
+        position: absolute;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    @keyframes colorchange {
+        from{
+            background-color: red;
+        }
+        to{
+            background-color: yellow;
+        }
+    }
+    @keyframes move {
+        0%{
+            left: 0%;
+            top: 0%;
+        }
+        25%{
+            left: 100%-200px;
+            top: 0%;
+        }
+        50%{
+            left: 100%;
+            top: 100%-200px;
+        }
+        75%{
+            left: 0%-200px;
+            top: 100%-200px;
+        }
+        100%{
+            left: 0%;
+            top: 0%;
+        }
+    }
+</style>
+<body>
+    <div class="background">
+        <div class="movement">
+
+        </div>
+    </div>
+</body>
+</html>

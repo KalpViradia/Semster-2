@@ -1,0 +1,81 @@
+<html>
+<head>
+
+</head>
+<style>
+    .page{
+        background-color: deepskyblue;
+    }
+    .header{
+        background-color: deeppink;
+    }
+    .content{
+        background-color: darkorange;
+        height: 300px;
+    }
+    .div1{
+        float: left;
+    }
+    .entry{
+        background-color: black;
+        color: white;
+        width: 800px;
+    }
+    .div2{
+        float: right;
+    }
+    .sidebar{
+        background-color: black;
+        color: white;
+        height: 130px;
+        width: 500px;
+    }
+    .footer{
+        background-color:blue;
+    }
+    @media screen and (max-width:350px) {
+        .header{
+            width: 300px;
+            background-color: darkolivegreen;
+        }
+        .content{
+            width: 300px;
+            height: 300px;
+            background-color: chartreuse;
+        }
+        .entry{
+            width: 300px;
+            background-color: yellowgreen;
+        }
+        .sidebar{
+            background-color: aquamarine;
+            width: 300px;
+            height: 50px;
+        }
+        .footer{
+            width: 300px;
+            background-color: crimson;
+        }
+    }
+</style>
+<body class="page">
+    Page
+    <div class="header">
+        Header
+    </div>
+    <div class="content">
+        <div class="div1">
+            Content<br>
+            <div class="entry">Entry</div><br><br>
+            <div class="entry">Entry</div><br><br>
+            <div class="entry">Entry</div>
+        </div>
+        <div class="div2">
+            <br>
+            <div class="sidebar"><br>Sidebar</div>
+        </div>
+    </div>
+    <div class="footer">
+        Darshan University-Rajkot
+    </div>
+</html>
